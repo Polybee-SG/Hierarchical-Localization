@@ -6,7 +6,7 @@ import torch
 
 from ..utils.base_model import BaseModel
 
-d2net_path = Path(__file__).parent / "../../third_party/d2net"
+d2net_path = Path(__file__).parent / "../third_party/d2net"
 sys.path.append(str(d2net_path))
 from lib.model_test import D2Net as _D2Net  # noqa: E402
 from lib.pyramid import process_multiscale  # noqa: E402

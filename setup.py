@@ -15,6 +15,9 @@ setup(
     name='hloc',
     version=version,
     packages=find_packages(),
+    package_data={
+        "hloc": ["third_party/**/*"],
+    },
     python_requires='>=3.6',
     install_requires=dependencies,
     author='Paul-Edouard Sarlin',

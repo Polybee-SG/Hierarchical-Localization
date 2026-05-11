@@ -9,7 +9,7 @@ import torch
 
 from ..utils.base_model import BaseModel
 
-sys.path.append(str(Path(__file__).parent / "../../third_party/deep-image-retrieval"))
+sys.path.append(str(Path(__file__).parent / "../third_party/deep-image-retrieval"))
 os.environ["DB_ROOT"] = ""  # required by dirtorch
 
 from dirtorch.extract_features import load_model  # noqa: E402
